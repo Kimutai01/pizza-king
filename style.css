@@ -1,3 +1,11 @@
 span {
     color: yellow;
 }
+
+.about {
+    background-image: url(images/shourav-sheikh-xLfqx4Psf94-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
