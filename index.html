@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Pizza King</title>
 </head>
+
 <body>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
         <div class="container">
             <a href="#" class="navbar-brand fs-1">Pizza <span>King</span></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto fs-4">
@@ -44,11 +48,11 @@
     </section>
     <section class="types" id="types">
         <div class="container m-5 text-center">
-            <h3>Menu</h3>
+            <h2>Menu</h2>
             <div class="row align-items-center">
                 <div class="col">
-                  <img src="images/small.jpeg" alt="small">
-                  <h6>small</h6>
+                    <img src="images/small.jpeg" alt="small">
+                    <h6>small</h6>
                 </div>
                 <div class="col">
                     <img src="images/large.jpeg" alt="medium">
@@ -58,9 +62,54 @@
                     <img src="images/medium.jpeg" alt="large">
                     <h6>large</h6>
                 </div>
-              </div>
+            </div>
         </div>
-        
+
     </section>
+    <section class="orders">
+        <div class="container bg-dark text-center">
+            <h2 class="text-white ">ORDER NOW!!!</h2>
+
+            <h5 class="text-white">choose your favourite type</h5>
+
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option value="1">Chicken Hawaiian</option>
+                <option selected value="2">Meat Deluxe</option>
+                <option value="3">Chicken Macon BBQ</option>
+                <option value="3">Chicken & Beef Pepperoni</option>
+            </select><br>
+            <h5 class="text-white">choose the size you want</h5>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option value="1">small @ 600</option>
+                <option value="2">medium @ 800</option>
+                <option  selected value="3">large @ 1000</option>
+            </select><br>
+            <h5 class="text-white">Choose your favourite crust</h5>
+
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Open this select menu</option>
+                <option value="1">stuffed @200</option>
+                <option value="2">gluten@ 150</option>
+                <option selected value="3">crispy @ 300</option>
+            </select><br>
+            <h5 class="text-white">choose your favourite toping</h5>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option value="1">meat</option>
+                <option value="2">sausage</option>
+                <option value="3">onion</option>
+                <option selected value="3">cheese</option>
+            </select><br>
+            <h5 class="text-white">number of Pizza</h5>
+            <input class="form-control" type="number" placeholder="number to be delivered" min="1"><br>
+
+            <button type="button" class="btn btn-success">Checkout</button>
+
+
+        </div>
+
+    </section>
+
+
 </body>
+
 </html>
