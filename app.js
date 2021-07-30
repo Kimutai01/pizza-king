@@ -9,7 +9,7 @@ function number(){
     let crust = parseInt(document.getElementById('crust').value)
     alert(crust)
 
-    let totalPrice =((crust + size)*pizza)
+    let totalPrice =((crust + siz)*pizza)
     alert(totalPrice)
 
     let topping = document.getElementById('toping').value
@@ -20,33 +20,64 @@ function number(){
 
 
     if(siz== 1000 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'large' +' ' + 'stuffed' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'stuffed' + ' ' + topping)
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'stuffed' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+
     }else if(siz== 1000 && crust==150) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'large' +' ' + 'gluten' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'gluten' + ' ' + topping)
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'gluten' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
     }else if(siz== 1000 && crust==300) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'large' +' ' + 'crispy' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'crispy' + ' ' + topping)
-    }else if(siz== 800 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'medium' +' ' + '' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'medium' +' ' + 'stuffed' + ' ' + topping)
-    }else if(siz== 800 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'medium' +' ' + 'gluten' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'medium' +' ' + 'gluten' + ' ' + topping)
-    }else if(siz== 800 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'medium' +' ' + 'crispy' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'medium' +' ' + 'crispy' + ' ' + topping)
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'crispy' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+    }else if(siz== 800 && crust==200) { 
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'medium' +' ' + 'stuffed' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+    }else if(siz== 800 && crust==150) { 
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'medium' +' ' + 'gluten' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+    }else if(siz== 800 && crust==300) {
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'medium' +' ' + 'crispy' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
     }else if(siz== 600 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'small' +' ' + 'stuffed' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'small' +' ' + 'stuffed' + ' ' + topping)
-    }else if(siz== 600 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'small' +' ' + 'gluten' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'small' +' ' + 'gluten' + ' ' + topping)
-    }else if(siz== 600 && crust==200) {
-        document.getElementById('result').innerHTML =['You have selected' +' '+ pizza + ' ' + type + ' ' + 'small' +' ' + 'crispy' + ' ' + topping ] 
-        alert('You have selected' +' ' + pizza +' ' + type + ' ' + 'small' +' ' + 'crispy' + ' ' + topping)
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'small' +' ' + 'stuffed' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+
+    }else if(siz== 600 && crust==150) { 
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'small' +' ' + 'gluten' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+    }else if(siz== 600 && crust==300) {
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'small' +' ' + 'crispy' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
     }
+
+    
 
 
 

@@ -67,8 +67,8 @@
         </div>
 
     </section>
-    <section class="orders">
-        <div class="container bg-dark text-center">
+    <section class="orders"><br><br><br>
+        <div class="container text-center">
             <h2 class="text-white ">ORDER NOW!!!</h2>
 
             <h5 class="text-white">choose your favourite type</h5>
@@ -103,16 +103,34 @@
             <h5 class="text-white">number of Pizza</h5>
             <input class="form-control" id="ordered" type="number" placeholder="number to be delivered" min="1"><br>
 
-            <button type="button" class="btn btn-success" onclick="number()">Checkout</button>
-
-            <p id="result" class="text-white">this</p>
+            <button type="button" class="btn btn-success" onclick="number()">Checkout</button><br><br><br>
 
 
         </div>
 
     </section>
+    <section class="deliveries"><br><br><br><br><br><br><br>
+        <div class="container text-white text-center">
+            <h2>DELIVERY</h2>
+            <div class="mb-3">
+                <h5 class="text-white">Name</h5>
+                <input type="text" class="form-control" id="name" placeholder="name">
+              </div>
+              <div class="mb-3">
+                <h5 class="text-white">Phone Number</h5>
+                <input type="number" class="form-control" id="phone" placeholder="phone number">
+              </div>
+              <div class="mb-3">
+                <h5 class="text-white">Location</h5>
+                <input type="location" class="form-control" id="location" placeholder="location">
+              </div>
 
+              <button type="button" class="btn btn-success">Submit</button>
+        </div>
 
+    </section>
+
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="app.js"></script>
     <script src="jquery.js"></script>
 
