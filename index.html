@@ -88,26 +88,26 @@
                     <div class="col-6">
                         <div class="p-3 border bg-light">
                             <h4>pizza size</h4>
-                            <input type="radio" name="size" id="large" value="large">large @ 1000<br>
-                            <input type="radio" name="size" id="medium" value="medium">medium @ 800<br>
-                            <input type="radio" name="size" id="small" value="small">small @ 600<br><br>
+                            <input type="radio" name="size" id="large" onclick="largePizza()" value="large">large @ 1000<br>
+                            <input type="radio" name="size" id="medium" onclick="mediumPizza()" value="medium">medium @ 800<br>
+                            <input type="radio" name="size" id="small" onclick="smallPizza()" value="small">small @ 600<br><br>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="p-3 border bg-light">
                             <h4>Crust</h4>
-                            <input type="radio" name="crust" id="stuffed" value="stuffed">stuffed <br>
-                            <input type="radio" name="crust" id="crispy" value="crispy">crispy <br>
-                            <input type="radio" name="crust" id="glutten" value="glutten">glutten <br><br>
+                            <input type="radio" name="crust" id="stuffed" onclick="stuffedCrust ()" value="stuffed">stuffed <br>
+                            <input type="radio" name="crust" id="crispy" onclick="crispyCrust ()" value="crispy">crispy <br>
+                            <input type="radio" name="crust" id="glutten" onclick="gluttenCrust ()" value="glutten">glutten <br><br>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="p-3 border bg-light">
                             <h4>Topping</h4>
-                            <input type="radio" name="crust" id="stuffed" value="stuffed">Sausage <br>
-                            <input type="radio" name="crust" id="crispy" value="crispy">Meat <br>
-                            <input type="radio" name="crust" id="glutten" value="glutten">Onion <br>
-                            <input type="radio" name="crust" id="glutten" value="glutten">Extra Cheese<br>
+                            <input type="radio" name="toping" id="sausage" onclick="sausageToping()" value="sausage">Sausage <br>
+                            <input type="radio" name="toping" id="meat" onclick="meatToping ()" value="meat">Meat <br>
+                            <input type="radio" name="toping" id="onion" onclick="onionToping ()" value="onion">Onion <br>
+                            <input type="radio" name="toping" id="cheese" onclick="cheeseToping ()" value="cheese">Extra Cheese<br>
                         </div>
                     </div>
                     <h4 class="text-white">Number ordered </h4>
@@ -124,8 +124,12 @@
     <section class="deliveries"><br>
         <div class="container text-center text-white">
             <button type="button" class="btn btn-success" style="text-align: center;"
-                onclick="number()">Checkout</button><br>
+                onclick="number()">Checkout</button><br><br>
+                <h4>Your order</h4>
             <p id="result"></p>
+            <p id="size-result"></p>
+            <p id="crust-type"></p>
+            <p id="toping-type"></p>
         </div>
 
     </section>
