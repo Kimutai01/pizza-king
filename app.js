@@ -22,55 +22,103 @@ function typeDeluxe(){
 //  pizza-size
 
 function largePizza (){
-    let pizzaLarge = document.getElementById('large').value;
+    let pizzaLarge = parseInt(document.getElementById('large').value);
+    alert(pizzaLarge)
     document.getElementById('size-result').innerHTML = 'Large'
 }
 
 function mediumPizza (){
-    let pizzaMedium= document.getElementById('medium').value;
+    let pizzaMedium= parseInt(document.getElementById('medium').value);
+    alert(pizzaMedium)
     document.getElementById('size-result').innerHTML = 'medium'
 }
 
 function smallPizza (){
-    let pizzaSmall = document.getElementById('small').value;
+    let pizzaSmall = parseInt(document.getElementById('small').value);
+    alert(pizzaSmall)
     document.getElementById('size-result').innerHTML = 'small'
 }
 
 // crust
 
 function stuffedCrust (){
-    let crustStuffed = document.getElementById('stuffed').value;
+    let crustStuffed = parseInt(document.getElementById('stuffed').value);
+    alert(crustStuffed)
     document.getElementById('crust-type').innerHTML = 'Stuffed Crust'
 }
 
 function crispyCrust (){
-    let crustCrispy = document.getElementById('crispy').value;
+    let crustCrispy = parseInt(document.getElementById('crispy').value);
+    alert(crustCrispy)
     document.getElementById('crust-type').innerHTML = 'Crispy Crust'
 }
 
 function gluttenCrust (){
-    let crustGlutten = document.getElementById('glutten').value;
+    let crustGlutten = parseInt(document.getElementById('glutten').value);
+    alert(crustGlutten)
     document.getElementById('crust-type').innerHTML = 'Glutten Crust'
 }
 // topping
 
 function sausageToping(){
-    let topingSausage = document.getElementById('sausage').value;
-    document.getElementById('toping-type').innerHTML = 'sausage toping'
-}
+    let big = document.getElementById('size-result').innerHTML
+    let topingSausage = parseInt(document.getElementById('sausage').value);
+    document.getElementById('toping-type').innerHTML = 'sausage toping';
+    if(big=='Large'){
+        document.getElementById('toping-price').innerHTML =String(300)
+    }else if (big=='medium'){
+        document.getElementById('toping-price').innerHTML =String(250)
+    }else if (big=='small'){
+        document.getElementById('toping-price').innerHTML =String(200)
+    }
+
+    }
 
 function meatToping (){
+    let big = document.getElementById('size-result').innerHTML
     let topingMeat = document.getElementById('meat').value;
     document.getElementById('toping-type').innerHTML = 'meat toping'
+    if(big=='Large'){
+        document.getElementById('toping-price').innerHTML =String(300)
+    }else if (big=='medium'){
+        document.getElementById('toping-price').innerHTML =String(250)
+    }else if (big=='small'){
+        document.getElementById('toping-price').innerHTML =String(200)
+    }
 }
 function onionToping (){
+    let big = document.getElementById('size-result').innerHTML
     let topingOnion = document.getElementById('onion').value;
     document.getElementById('toping-type').innerHTML = 'onion toping'
+    if(big=='Large'){
+        document.getElementById('toping-price').innerHTML =String(300)
+    }else if (big=='medium'){
+        document.getElementById('toping-price').innerHTML =String(250)
+    }else if (big=='small'){
+        document.getElementById('toping-price').innerHTML =String(200)
+    }
 }
 function cheeseToping (){
+    let big = document.getElementById('size-result').innerHTML
     let topingCheese = document.getElementById('cheese').value;
     document.getElementById('toping-type').innerHTML = 'cheese toping'
+    if(big=='Large'){
+        document.getElementById('toping-price').innerHTML =String(300)
+    }else if (big=='medium'){
+        document.getElementById('toping-price').innerHTML =String(250)
+    }else if (big=='small'){
+        document.getElementById('toping-price').innerHTML =String(200)
+    }
 }
+
+
+
+
+
+
+
+
+
 
 
 
