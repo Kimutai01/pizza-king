@@ -23,21 +23,23 @@ function typeDeluxe(){
 
 function largePizza (){
     let pizzaLarge = parseInt(document.getElementById('large').value);
-    alert(pizzaLarge)
+    document.getElementById('size-price').innerHTML =pizzaLarge
     document.getElementById('size-result').innerHTML = 'Large'
 }
 
 function mediumPizza (){
     let pizzaMedium= parseInt(document.getElementById('medium').value);
-    alert(pizzaMedium)
+    document.getElementById('size-price').innerHTML =pizzaMedium
     document.getElementById('size-result').innerHTML = 'medium'
 }
 
 function smallPizza (){
     let pizzaSmall = parseInt(document.getElementById('small').value);
-    alert(pizzaSmall)
+    document.getElementById('size-price').innerHTML =pizzaSmall
     document.getElementById('size-result').innerHTML = 'small'
 }
+
+
 
 // crust
 
@@ -138,6 +140,20 @@ function cheeseToping (){
     }else if (topingPrice=='small'){
         document.getElementById('toping-price').innerHTML =String(200)
     }
+}
+
+function thePrice(){
+    let numm=document.getElementById('num').value
+    document.getElementById('num3').innerHTML= numm
+    let sum= (parseInt(document.getElementById('size-price').innerHTML)+parseInt(document.getElementById('toping-price').innerHTML) + parseInt( document.getElementById('crust-price').innerHTML))
+    let totalSum= sum * document.getElementById('num3').innerHTML
+    document.getElementById('total-price').innerHTML = totalSum
+
+
+}
+
+function withoutDelivery(){
+    
 }
 
 
