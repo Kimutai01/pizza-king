@@ -9,14 +9,18 @@ function number(){
     let crust = parseInt(document.getElementById('crust').value)
     alert(crust)
 
-    let totalPrice =((crust + siz)*pizza)
+    let topping = parseInt(document.getElementById('toping').value)
+    alert(topping)
+
+
+    let totalPrice =((crust + siz + topping)*pizza)
     alert(totalPrice)
 
-    let topping = document.getElementById('toping').value
-    alert(topping)
 
     let type = document.getElementById('type').value;
     alert(type)
+
+    
 
 
     if(siz== 1000 && crust==200) {
@@ -26,6 +30,18 @@ function number(){
             icon: "success",
         })
 
+    }else if(siz== 1000 && crust==150) {
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'gluten' + ' ' +topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
+    }else if(siz== 1000 && crust==150) {
+        swal({
+            title:"your order is recieved",
+            text:'You have selected' +' ' + pizza +' ' + type + ' ' + 'large' +' ' + 'gluten' + ' ' + topping +' ' +'and the price is ' + ' ' +totalPrice,
+            icon: "success",
+        })
     }else if(siz== 1000 && crust==150) {
         swal({
             title:"your order is recieved",
@@ -77,7 +93,7 @@ function number(){
         })
     }
 
-    
+    let delivery = prompt('do you want it to be delivered', 'yes')
 
 
 
