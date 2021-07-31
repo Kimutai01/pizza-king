@@ -42,71 +42,100 @@ function smallPizza (){
 // crust
 
 function stuffedCrust (){
+    let crustPrice = document.getElementById('size-result').innerHTML
     let crustStuffed = parseInt(document.getElementById('stuffed').value);
     alert(crustStuffed)
     document.getElementById('crust-type').innerHTML = 'Stuffed Crust'
+
+    if(crustPrice=='Large'){
+        document.getElementById('crust-price').innerHTML =String(200)
+    }else if (crustPrice=='medium'){
+        document.getElementById('crust-price').innerHTML =String(150)
+    }else if (crustPrice=='small'){
+        document.getElementById('crust-price').innerHTML =String(100)
+    }
+
 }
 
 function crispyCrust (){
+    let crustPrice = document.getElementById('size-result').innerHTML
     let crustCrispy = parseInt(document.getElementById('crispy').value);
     alert(crustCrispy)
     document.getElementById('crust-type').innerHTML = 'Crispy Crust'
+    if(crustPrice=='Large'){
+        document.getElementById('crust-price').innerHTML =String(200)
+    }else if (crustPrice=='medium'){
+        document.getElementById('crust-price').innerHTML =String(150)
+    }else if (crustPrice=='small'){
+        document.getElementById('crust-price').innerHTML =String(100)
+    }
+
 }
 
 function gluttenCrust (){
+    let crustPrice = document.getElementById('size-result').innerHTML
     let crustGlutten = parseInt(document.getElementById('glutten').value);
     alert(crustGlutten)
     document.getElementById('crust-type').innerHTML = 'Glutten Crust'
+
+    if(crustPrice=='Large'){
+        document.getElementById('crust-price').innerHTML =String(200)
+    }else if (crustPrice=='medium'){
+        document.getElementById('crust-price').innerHTML =String(150)
+    }else if (crustPrice=='small'){
+        document.getElementById('crust-price').innerHTML =String(100)
+    }
+
 }
 // topping
 
 function sausageToping(){
-    let big = document.getElementById('size-result').innerHTML
+    let topingPrice = document.getElementById('size-result').innerHTML
     let topingSausage = parseInt(document.getElementById('sausage').value);
     document.getElementById('toping-type').innerHTML = 'sausage toping';
-    if(big=='Large'){
+    if(topingPrice=='Large'){
         document.getElementById('toping-price').innerHTML =String(300)
-    }else if (big=='medium'){
+    }else if (topingPrice=='medium'){
         document.getElementById('toping-price').innerHTML =String(250)
-    }else if (big=='small'){
+    }else if (topingPrice=='small'){
         document.getElementById('toping-price').innerHTML =String(200)
     }
 
     }
 
 function meatToping (){
-    let big = document.getElementById('size-result').innerHTML
+    let  topingPrice = document.getElementById('size-result').innerHTML
     let topingMeat = document.getElementById('meat').value;
     document.getElementById('toping-type').innerHTML = 'meat toping'
-    if(big=='Large'){
+    if(topingPrice=='Large'){
         document.getElementById('toping-price').innerHTML =String(300)
-    }else if (big=='medium'){
+    }else if (topingPrice=='medium'){
         document.getElementById('toping-price').innerHTML =String(250)
-    }else if (big=='small'){
+    }else if (topingPrice=='small'){
         document.getElementById('toping-price').innerHTML =String(200)
     }
 }
 function onionToping (){
-    let big = document.getElementById('size-result').innerHTML
+    let  topingPrice = document.getElementById('size-result').innerHTML
     let topingOnion = document.getElementById('onion').value;
     document.getElementById('toping-type').innerHTML = 'onion toping'
-    if(big=='Large'){
+    if(topingPrice=='Large'){
         document.getElementById('toping-price').innerHTML =String(300)
-    }else if (big=='medium'){
+    }else if (topingPrice=='medium'){
         document.getElementById('toping-price').innerHTML =String(250)
-    }else if (big=='small'){
+    }else if (topingPrice=='small'){
         document.getElementById('toping-price').innerHTML =String(200)
     }
 }
 function cheeseToping (){
-    let big = document.getElementById('size-result').innerHTML
+    let topingPrice = document.getElementById('size-result').innerHTML
     let topingCheese = document.getElementById('cheese').value;
     document.getElementById('toping-type').innerHTML = 'cheese toping'
-    if(big=='Large'){
+    if(topingPrice=='Large'){
         document.getElementById('toping-price').innerHTML =String(300)
-    }else if (big=='medium'){
+    }else if (topingPrice=='medium'){
         document.getElementById('toping-price').innerHTML =String(250)
-    }else if (big=='small'){
+    }else if (topingPrice=='small'){
         document.getElementById('toping-price').innerHTML =String(200)
     }
 }
