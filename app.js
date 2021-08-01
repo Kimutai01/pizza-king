@@ -163,6 +163,13 @@ function thePrice(){
         document.getElementById('result').innerHTML ='';
         document.getElementById('size-result').innerHTML='';
         document.getElementById('total-price').innerHTML='';
+    }else if(document.getElementById('crust-price').innerHTML==''){
+        swal('please enter crust');
+        document.getElementById('toping-price').innerHTML='';
+        document.getElementById('crust-price').innerHTML='';
+        document.getElementById('result').innerHTML ='';
+        document.getElementById('size-result').innerHTML='';
+        document.getElementById('total-price').innerHTML='';
     }
 
 
