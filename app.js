@@ -153,7 +153,7 @@ function thePrice(){
 }
 
 function withoutDelivery(){
-    
+    alert('Your order has been recieved for ' + ' ' + document.getElementById('num3').innerHTML + ' ' +  document.getElementById('result').innerHTML+ ' ' + document.getElementById('size-result').innerHTML + ' ' + document.getElementById('crust-type').innerHTML + ' ' + ' with ' + ' ' + document.getElementById('toping-type').innerHTML + ' and the total price is ' + ' ' + document.getElementById('total-price').innerHTML)
 }
 
 
