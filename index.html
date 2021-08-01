@@ -88,55 +88,65 @@
                     <div class="col-6">
                         <div class="p-3 border bg-light">
                             <h4>pizza size</h4>
-                            <input type="radio" name="size" id="large" onclick="largePizza()" value="1000">large @ 1000<br>
-                            <input type="radio" name="size" id="medium" onclick="mediumPizza()" value="800">medium @ 800<br>
-                            <input type="radio" name="size" id="small" onclick="smallPizza()" value="600">small @ 600<br><br>
+                            <input type="radio" name="size" id="large" onclick="largePizza()" value="1000">large @
+                            1000<br>
+                            <input type="radio" name="size" id="medium" onclick="mediumPizza()" value="800">medium @
+                            800<br>
+                            <input type="radio" name="size" id="small" onclick="smallPizza()" value="600">small @
+                            600<br><br>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="p-3 border bg-light">
                             <h4>Crust</h4>
-                            <input type="radio" name="crust" id="stuffed" onclick="stuffedCrust ()" value="stuffed">stuffed <br>
-                            <input type="radio" name="crust" id="crispy" onclick="crispyCrust ()" value="crust">crispy <br>
-                            <input type="radio" name="crust" id="glutten" onclick="gluttenCrust ()" value="glutten">glutten <br><br>
+                            <input type="radio" name="crust" id="stuffed" onclick="stuffedCrust ()"
+                                value="stuffed">stuffed <br>
+                            <input type="radio" name="crust" id="crispy" onclick="crispyCrust ()" value="crust">crispy
+                            <br>
+                            <input type="radio" name="crust" id="glutten" onclick="gluttenCrust ()"
+                                value="glutten">glutten <br><br>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="p-3 border bg-light">
                             <h4>Topping</h4>
-                            <input type="radio" name="toping" id="sausage" onclick="sausageToping()" value="sausage">Sausage <br>
-                            <input type="radio" name="toping" id="meat" onclick="meatToping ()" value="meat">Meat <br>
-                            <input type="radio" name="toping" id="onion" onclick="onionToping ()" value="onion">Onion <br>
-                            <input type="radio" name="toping" id="cheese" onclick="cheeseToping ()" value="cheese">Extra Cheese<br>
+                            <input type="radio" name="toping" id="sausage" onclick="sausageToping()"
+                                value="sausage">Sausage large@250,medium@200,small@150<br>
+                            <input type="radio" name="toping" id="meat" onclick="meatToping ()" value="meat">Meat large@300, medium@250, small@200 <br>
+                            <input type="radio" name="toping" id="onion" onclick="onionToping ()" value="onion">Onion large@250, medium@200, small@150
+                            <br>
+                            <input type="radio" name="toping" id="cheese" onclick="cheeseToping ()" value="cheese">Extra
+                            Cheese large@300,medium@250,small@200<br>
                         </div>
                     </div>
-                    <h4 class="text-white">Number ordered </h4>
-                    <input class="text-center" style="width: 300px; margin-left: auto; margin-right: auto;"
-                        type="number" name="number" id="num" value="number" min="1">
                 </div>
-            </div>
+            </div><br><br>
+            <h4 class="text-white">Number ordered </h4>
+            <input class="text-center" style="width: 300px; margin-left: auto; margin-right: auto;"
+                type="number" name="number" id="num" value="number" min="1">
         </div>
 
 
-        </div>
 
     </section>
     <section class="deliveries"><br>
-        <div class="container text-center text-white">
-            <button type="button" class="btn btn-success" style="text-align: center;"
+        <div class="container text-center text-white"><br><br><br><br>
+            <button type="button" class="btn btn-success btn1" style="text-align: center;"
                 onclick="thePrice()">Checkout</button><br><br>
-                <h4>Your order</h4>
-            <p id="result"></p>
-            <p id="size-result"></p>
-            <p id="size-price"></p>
-            <p id="crust-type"></p>
-            <p id="crust-price"></p>
-            <p id="toping-type"></p>
-            <p id="toping-price"></p>
-            <p id="num3">hhh</p>
-            <p id="total-price"></p><br>
-            <button type="button" onclick="withoutDelivery()" class="btn btn-light">pickup</button>
-            <button type="button" class="btn btn-info">Delivery</button>
+            <h4>Your order</h4>
+            <div class="resu">
+                <p id="result"></p>
+                <p id="size-result"></p>
+                <p id="size-price"></p>
+                <p id="crust-type"></p>
+                <p id="crust-price"></p>
+                <p id="toping-type"></p>
+                <p id="toping-price"></p>
+                <p id="num3"></p>
+                <p id="total-price"></p><br>
+                <button type="button" onclick="withoutDelivery()" class="btn btn-light">pickup</button>
+                <button type="button" class="btn btn-info">Delivery</button>
+            </div>
 
         </div>
 

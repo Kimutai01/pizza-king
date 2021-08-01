@@ -7,16 +7,23 @@ span {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    overflow:hidden;
 
 }
 .orders {
     background-image: url(images/charles-deluvio-pLjFwX5VR-M-unsplash.jpg);
     height: 100vh;
     background-size: cover;
+    overflow:hidden;
 }
 
 .deliveries {
     background-image: url(images/sahal-hameed-Nq9KlQTTEbQ-unsplash.jpg);
     height: 100vh;
     background-size: cover;
+    overflow:hidden;
+}
+
+.resu {
+    display: none;
 }
