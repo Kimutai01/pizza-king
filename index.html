@@ -111,9 +111,9 @@
                         <div class="p-3 border bg-light">
                             <h4>Topping</h4>
                             <input type="radio" name="toping" id="sausage" onclick="sausageToping()"
-                                value="sausage">Sausage large@250,medium@200,small@150<br>
+                                value="sausage">Sausage large@300,medium@250,small@200<br>
                             <input type="radio" name="toping" id="meat" onclick="meatToping ()" value="meat">Meat large@300, medium@250, small@200 <br>
-                            <input type="radio" name="toping" id="onion" onclick="onionToping ()" value="onion">Onion large@250, medium@200, small@150
+                            <input type="radio" name="toping" id="onion" onclick="onionToping ()" value="onion">Onion large@300, medium@250, small@200
                             <br>
                             <input type="radio" name="toping" id="cheese" onclick="cheeseToping ()" value="cheese">Extra
                             Cheese large@300,medium@250,small@200<br>
@@ -145,9 +145,19 @@
                 <p id="num3"></p>
                 <p id="total-price"></p><br>
                 <button type="button" onclick="withoutDelivery()" class="btn btn-light">pickup</button>
-                <button type="button" class="btn btn-info">Delivery</button>
+                <button type="button" onclick="withDelivery()" class="btn btn-info">Delivery</button>
             </div>
 
+        </div>
+
+    </section>
+    <section class="delivery-section">
+        <div class="container text-center">
+            <p id="info"></p>
+            <p id="phone"></p>
+            <p id="delivery-fee"></p>
+            <p id="grand"></p>
+            <p id="every"></p>
         </div>
 
     </section>
