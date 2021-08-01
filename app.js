@@ -148,7 +148,7 @@ function thePrice(){
     let sum= (parseInt(document.getElementById('size-price').innerHTML)+parseInt(document.getElementById('toping-price').innerHTML) + parseInt( document.getElementById('crust-price').innerHTML))
     let totalSum= sum * document.getElementById('num3').innerHTML
     document.getElementById('total-price').innerHTML = totalSum
-    if(document.getElementById('toping-price').innerHTML=='' && document.getElementById('crust-price').innerHTML=='' && document.getElementById('size-result').innerHTML=='' &&  document.getElementById('result').innerHTML ==''){
+    if(document.getElementById('toping-price').innerHTML=='' && document.getElementById('crust-price').innerHTML=='' && document.getElementById('size-result').innerHTML==''){
         swal('please enter type, size, crust and toping')
         document.getElementById('toping-price').innerHTML='';
         document.getElementById('crust-price').innerHTML='';
@@ -156,22 +156,56 @@ function thePrice(){
         document.getElementById('size-result').innerHTML='';
         document.getElementById('total-price').innerHTML='';
        
-    }else if(document.getElementById('toping-price').innerHTML==''){
+    }else if(document.getElementById('toping-price').innerHTML=='' && document.getElementById('crust-price').innerHTML=='' && document.getElementById('size-result').innerHTML==''){
+        swal('please enter toping,crust and size');
+        document.getElementById('toping-price').innerHTML='';
+        document.getElementById('crust-price').innerHTML='';
+        document.getElementById('result').innerHTML ='';
+        document.getElementById('size-result').innerHTML='';
+        document.getElementById('total-price').innerHTML='';
+    }else if(document.getElementById('crust-price').innerHTML=='' && document.getElementById('size-result').innerHTML==''){
+        swal('please enter crust and size');
+        document.getElementById('toping-price').innerHTML='';
+        document.getElementById('crust-price').innerHTML='';
+        document.getElementById('result').innerHTML ='';
+        document.getElementById('size-result').innerHTML='';
+        document.getElementById('total-price').innerHTML='';
+    }else if(document.getElementById('size-price').innerHTML=='' && document.getElementById('toping-price').innerHTML==''){
+        swal('please enter size you want and toping');
+        document.getElementById('toping-price').innerHTML='';
+        document.getElementById('crust-price').innerHTML='';
+        document.getElementById('result').innerHTML ='';
+        document.getElementById('size-result').innerHTML='';
+        document.getElementById('total-price').innerHTML='';
+    }else if(document.getElementById('size-price').innerHTML==''){
+        swal('please enter size');
+        document.getElementById('toping-price').innerHTML='';
+        document.getElementById('crust-price').innerHTML='';
+        document.getElementById('result').innerHTML ='';
+        document.getElementById('size-result').innerHTML='';
+        document.getElementById('total-price').innerHTML='';
+    }else if( document.getElementById('toping-price').innerHTML==''){
         swal('please enter toping');
         document.getElementById('toping-price').innerHTML='';
         document.getElementById('crust-price').innerHTML='';
         document.getElementById('result').innerHTML ='';
         document.getElementById('size-result').innerHTML='';
         document.getElementById('total-price').innerHTML='';
-    }else if(document.getElementById('crust-price').innerHTML==''){
+    }else if( document.getElementById('crust-price').innerHTML==''){
         swal('please enter crust');
         document.getElementById('toping-price').innerHTML='';
         document.getElementById('crust-price').innerHTML='';
         document.getElementById('result').innerHTML ='';
         document.getElementById('size-result').innerHTML='';
         document.getElementById('total-price').innerHTML='';
+    }else if(document.getElementById('toping-price').innerHTML=='' && document.getElementById('crust-price').innerHTML==''){
+        swal('please enter crust and toping');
+        document.getElementById('toping-price').innerHTML='';
+        document.getElementById('crust-price').innerHTML='';
+        document.getElementById('result').innerHTML ='';
+        document.getElementById('size-result').innerHTML='';
+        document.getElementById('total-price').innerHTML='';
     }
-
 
 
 }
