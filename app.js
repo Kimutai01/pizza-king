@@ -105,7 +105,7 @@ function sausageToping() {
 }
 
 function meatToping() {
-    let topingPrice = document.getElementById('size-result').innerHTML
+    let topingPrice = document.getElementById('size-result').innerHTML;
     let topingMeat = document.getElementById('meat').value;
     document.getElementById('toping-type').innerHTML = 'meat toping'
     if (topingPrice == 'Large') {
@@ -162,7 +162,7 @@ function withoutDelivery() {
 
 function withDelivery() {
     swal('Delivery cost is 250 shillings')
-    document.getElementById('delivery-fee').innerHTML = 'The delivery price is' +' ' + 250
+    document.getElementById('delivery-fee').innerHTML = 'The delivery price is' + ' ' + 250
     let myLocation = prompt('what is your location');
     let phoneNo = prompt('Enter your phone number')
     document.getElementById('info').innerHTML = 'Your Location is' + ' ' + myLocation
