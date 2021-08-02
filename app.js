@@ -77,7 +77,6 @@ function crispyCrust() {
 function gluttenCrust() {
     let crustPrice = document.getElementById('size-result').innerHTML
     let crustGlutten = parseInt(document.getElementById('glutten').value);
-    alert(crustGlutten)
     document.getElementById('crust-type').innerHTML = 'Glutten Crust'
 
     if (crustPrice == 'Large') {
@@ -148,23 +147,6 @@ function thePrice() {
     let sum = (parseInt(document.getElementById('size-price').innerHTML) + parseInt(document.getElementById('toping-price').innerHTML) + parseInt(document.getElementById('crust-price').innerHTML))
     let totalSum = sum * document.getElementById('num3').innerHTML
     document.getElementById('total-price').innerHTML = totalSum
-   
-    if( document.getElementById('toping-price').innerHTML=='' &&document.getElementById('crust-price').innerHTML==''&&  document.getElementById('size-price').innerHTML==''){
-    swal('please enter size toping and crust')
-        
-    }else if(document.getElementById('toping-price').innerHTML==''){
-        swal('please enter toping');
-    }else if(document.getElementById('crust-price').innerHTML==''){
-        swal('please enter crust');
-    }else if(document.getElementById('size-price').innerHTML){
-        swal('please enter size');
-    }else if(document.getElementById('toping-price').innerHTML=='' &&document.getElementById('crust-price').innerHTML==''){
-        swal('enter toping and crust');
-    }else if (document.getElementById('crust-price').innerHTML==''&&  document.getElementById('size-price').innerHTML){
-        swal('please enter crust and size');
-    }else if(document.getElementById('toping-price').innerHTML=='' && document.getElementById('size-price').innerHTML){
-        swal('enter toping and size');
-    }
 
 
 }
@@ -180,7 +162,7 @@ function withoutDelivery() {
 
 function withDelivery() {
     swal('Delivery cost is 250 shillings')
-    document.getElementById('delivery-fee').innerHTML = 'The delivery price is' + 250
+    document.getElementById('delivery-fee').innerHTML = 'The delivery price is' +' ' + 250
     let myLocation = prompt('what is your location');
     let phoneNo = prompt('Enter your phone number')
     document.getElementById('info').innerHTML = 'Your Location is' + ' ' + myLocation
