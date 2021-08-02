@@ -46,7 +46,6 @@ function smallPizza() {
 function stuffedCrust() {
     let crustPrice = document.getElementById('size-result').innerHTML
     let crustStuffed = parseInt(document.getElementById('stuffed').value);
-    alert(crustStuffed)
     document.getElementById('crust-type').innerHTML = 'Stuffed Crust'
 
     if (crustPrice == 'Large') {
@@ -62,7 +61,6 @@ function stuffedCrust() {
 function crispyCrust() {
     let crustPrice = document.getElementById('size-result').innerHTML
     let crustCrispy = parseInt(document.getElementById('crispy').value);
-    alert(crustCrispy)
     document.getElementById('crust-type').innerHTML = 'Crispy Crust'
     if (crustPrice == 'Large') {
         document.getElementById('crust-price').innerHTML = String(200)
